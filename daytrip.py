@@ -1,27 +1,27 @@
-# import random
+import random
 
-# #place everything into functions!
+#place everything into functions!
 
-# list_of_destinations = ['Milwaukee' , 'Madison' , 'Racine' , 'Kenosha']
-# list_of_restaurants = ['Chick-fil-A' , 'Subway' , 'Dominos' , 'Qdoba']
-# list_of_transportation = ['Car' , 'Bus' , 'Airplane' , 'Train']
-# list_of_entertainment = ['Movies' , 'Concert' , 'Bar' , 'Skating']
+list_of_destinations = ['Milwaukee' , 'Madison' , 'Racine' , 'Kenosha']
+list_of_restaurants = ['Chick-fil-A' , 'Subway' , 'Dominos' , 'Qdoba']
+list_of_transportation = ['Car' , 'Bus' , 'Airplane' , 'Train']
+list_of_entertainment = ['Movies' , 'Concert' , 'Bar' , 'Skating']
 
-# #randomly select a value from each list & print. Remember to provide index 0, -1 in parenthesis.
+#randomly select a value from each list & print. Remember to provide index 0, -1 in parenthesis.
 
-# def random_destination():
-#     print(random.choice(list_of_destinations))
+def random_destination():
+    print(random.choice(list_of_destinations))
     
-# def random_restaurant():
-#     print(random.choice(list_of_restaurants))
+def random_restaurant():
+    print(random.choice(list_of_restaurants))
 
-# def random_transportation():
-#     print(random.choice(list_of_transportation))
+def random_transportation():
+    print(random.choice(list_of_transportation))
 
-# def random_entertainment():
-#     print(random.choice(list_of_entertainment))
+def random_entertainment():
+    print(random.choice(list_of_entertainment))
 
-# random_destination() , random_restaurant() , random_transportation() , random_entertainment()
+random_destination() , random_restaurant() , random_transportation() , random_entertainment()
 
 
 #PLACE INTO FUNCTIONS!
@@ -41,7 +41,8 @@ def does_user_disapprove():
     while user_disapproves == True:
         user_trip_approval = input("Do you approve of this itinerary? ")
         if user_trip_approval == "No":
-            does_user_disapprove()
+            random_destination() , random_restaurant() , random_transportation() , random_entertainment()
+            # does_user_disapprove()
         elif user_trip_approval == "Yes":
              print("Your itinerary is confirmed!")
              user_disapproves = False
